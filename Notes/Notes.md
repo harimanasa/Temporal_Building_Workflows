@@ -13,5 +13,7 @@
 
 5. A workflow can contain Business logic that may take days, weeks, or longer to complete; Conditional statements; and Cycles (steps that refer to previous steps).
    
-6. 
+6. The only required component is a database, such as Apache Cassandra, PostgreSQL, or MySQL. The Temporal Cluster tracks the current state of every execution of your Workflows. It also maintains a history of all Events that occur during their executions, which it uses to reconstruct the current state in case of failure. It persists this and other information, such as details related to durable timers and queues, to the database.
+
+
 
